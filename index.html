@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header class="header">
+            <div class="logo">
+                <span>🌤️</span>
+                <h2>Weather</h2>
+            </div>
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="cityInput"
+                    placeholder="Search for location"
+                >
+                <button id="searchBtn">
+                    🔍
+                </button>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="current-weather">
+                <div class="location">
+                    <h1 id="cityName">Chennai</h1>
+                    <p id="weatherDescription">Partly Cloudy</p>
+                </div>
+                <div class="temperature">
+                    <span id="temperature">30</span>°C
+                </div>
+                <div class="weather-icon">
+                    ☀️
+                </div>
+            </section>
+            <section class="weather-details">
+                <div class="weather-card">
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+                <div class="weather-card">
+                    <h3>💨 Wind</h3>
+                    <p id="windSpeed">-- km/h</p>
+                </div>
+                <div class="weather-card">
+                    <h3>🌡️ Feels Like</h3>
+                    <p id="feelsLike">--°C</p>
+                </div>
+                <div class="weather-card">
+                    <h3>🔽 Pressure</h3>
+                    <p id="pressure">-- hPa</p>
+                </div>
+            </section>
+            <section class="hourly-section">
+    <h2>Hourly Forecast</h2>
+
+    <div class="hourly-container" id="hourlyContainer">
+    </div>
+</section>
+           <section class="forecast-section">
+    <h2>5-Day Forecast</h2>
+
+    <div class="forecast-container" id="forecastContainer">
+    </div>
+</section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
